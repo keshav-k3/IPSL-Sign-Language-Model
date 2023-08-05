@@ -4,7 +4,8 @@
 <b>Abstract</b> — In a vast world populated by billions of people, communication is the fundamental aspect that sets us apart as humans. Without the ability to communicate, we would simply exist as soulless objects. Sadly, not everyone possesses the gift of unhindered communication. The interaction between individuals with disabilities and those without presents a formidable challenge. We propose a solution to this predicament by creating a sign language identifier that employs machine learning and web development techniques to assist those in need. Indo-Pakistani Sign Language (IPSL) is one such language that deserves more attention than it currently receives. Despite being actively used by over 15 million members of the deaf community, IPSL remains relatively unknown to the world at large. Our model will make IPSL detectable by integrating it with a Voice Based Email (VBE) system, which will aid not only the deaf but also the blind. To achieve this, we will employ an *LSTM* model. 
 
 <b>Working Model Architecture</b>
-![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/b828de47-c566-49e7-baa7-ccd944268dad)
+![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/a0067ddb-5fa2-4ea4-ab1d-8f9fa786ac71)
+
 <img src= height="200vw" width="200vw" />
 
 
