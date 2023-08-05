@@ -20,11 +20,13 @@
 <b>VBE Model</b>
 
 
+
 <center>
  
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/bcc5fc76-09fa-4be5-ae2a-ee864a682033)
 </center>
-<b>Sign Language Model</b> *In Action*
+<b>Sign Language Model</b> (In Action)
+
 
 <center>
  
