@@ -1,0 +1,168 @@
+<VoiceBasedEmail>:
+    name: "vbe"
+    recipient_email: recipient_email
+    subject: subject
+    content: content
+
+    FloatLayout:
+        cols:1
+        Image:
+            source: "background.jpeg"
+            allow_stretch: True
+            keep_ratio: False
+
+        FloatLayout:
+            size: root.width, root.height/2
+
+            Label:
+                text: "Voice Based Email"
+                size_hint: 0.8, 0.2
+                pos_hint: {"x":0.1, "top":1}
+                color: "19beff"
+                font_name: "Roboto-Bold.ttf"
+                font_size: (root.width**2 + root.height**2) / 15**4
+
+            Label:
+                size_hint: 0.5,0.12
+                color: "black"
+                font_name: "Roboto-Bold.ttf"
+                font_size: 30
+                pos_hint: {"x":0, "top":0.8}
+                text: "To: "
+
+
+            TextInput:
+                pos_hint: {"x":0.5, "top":0.8}
+                size_hint: 0.4, 0.12
+                foreground_color: "white"
+                background_color: "19beff"
+                padding: (20, 20)
+                id: recipient_email
+                multiline: False
+                text: "joeljacobstephen@gmail.com"
+
+
+            Label:
+                size_hint: 0.5,0.12
+                color: "black"
+                font_name: "Roboto-Bold.ttf"
+                font_size: 30
+                pos_hint: {"x":0, "top":0.8-0.13}
+                text: "Subject: "
+
+
+            TextInput:
+                pos_hint: {"x":0.5, "top":0.8-0.13}
+                size_hint: 0.4, 0.12
+                foreground_color: "white"
+                background_color: "19beff"
+                padding: (20, 20)
+                font_name: "Roboto-Bold.ttf"
+                id: subject
+                multiline: False
+
+
+            Label:
+                size_hint: 0.5,0.12
+                color: "black"
+                font_name: "Roboto-Bold.ttf"
+                font_size: 30
+                pos_hint: {"x":0, "top":0.8-0.13*2}
+                text: "Content: "
+
+
+            TextInput:
+                pos_hint: {"x":0.5, "top":0.8-0.13*2}
+                size_hint: 0.4, 0.12
+                id: content
+                padding: (20, 20)
+                foreground_color: "white"
+                background_color: "19beff"
+
+
+        Button:
+            pos_hint:{"x":0.3,"y":0.25}
+            size_hint: 0.4, 0.1
+            background_color: "19beff"
+            font_size: (root.width**2 + root.height**2) / 17**4
+            text: "Menu"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.open_menu()
+
+        Button:
+            pos_hint:{"x":0.3,"y":0.05}
+            size_hint: 0.4, 0.1
+            background_color: "19beff"
+            text: "Start"
+            font_size: (root.width**2 + root.height**2) / 17**4
+            on_release:
+                root.manager.transition.direction = "left"
+                root.send_email(root)
+
+
+
+<Menu>:
+    name: "menu"
+    Image:
+        source: "background.jpeg"
+        allow_stretch: True
+        keep_ratio: False
+
+
+    FloatLayout:
+        cols:1
+
+
+        FloatLayout:
+            size: root.width, root.height/2
+
+
+            Label:
+                text: "Menu"
+                color: "19beff"
+                font_name: "Roboto-Bold.ttf"
+                size_hint: 0.8, 0.2
+                pos_hint: {"x":0.1, "top":1}
+                font_size: (root.width**2 + root.height**2) / 14**4
+
+        Button:
+            pos_hint:{"x":0.2,"y":0.2}
+            size_hint: 0.6, 0.2
+            background_color: "19beff"
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "IPSL"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.open_ipsl()
+
+        Button:
+            pos_hint:{"x":0.2,"y":0.5}
+            size_hint: 0.6, 0.2
+            background_color: "19beff"
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "VBE"
+            on_release:
+                root.manager.transition.direction = "right"
+                root.open_vbe()
+<IPSL>:
+    FloatLayout:
+        cols:1
+
+        FloatLayout:
+            size: root.width, root.height/2
+
+            Label:
+                text: "IPSL"
+                size_hint: 0.8, 0.2
+                pos_hint: {"x":0.1, "top":1}
+                font_size: (root.width**2 + root.height**2) / 14**4
+
+        Button:
+            pos_hint:{"x":0.2, "y": 0.4}
+            size_hint:0.6,0.2
+            text: "Menu"
+            font_size: (root.width**2 + root.height**2) / 15**4
+            on_release:
+                app.root.current = "menu"
+                root.manager.transition.direction = "right"
