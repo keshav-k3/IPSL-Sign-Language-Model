@@ -7,21 +7,29 @@
 
 
 
-
+<center>
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/55e8a4f3-32d6-44a0-a97a-bf17d8494bb0)
-
+</center>
 
 <b>Desktop App</b>
+
+
+<center>
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/6736d153-078e-491e-8a50-53cd637e00b3)
-
+</center>
 <b>VBE Model</b>
-![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/bcc5fc76-09fa-4be5-ae2a-ee864a682033)
 
+
+<center>
+![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/bcc5fc76-09fa-4be5-ae2a-ee864a682033)
+</center>
 <b>Sign Language Model</b> *In Action*
+
+<center>
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/780a6b7a-744e-4606-ae05-7a628d51c502)
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/54ef6e3e-4ad7-4a5c-9b3c-6607273e4c5a)
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/43f86706-53d1-4f67-b1af-79a5c1b7d5c8)
 ![image](https://github.com/keshav-k3/IPSL-Sign-Language-Model/assets/76038589/466e1418-197d-40e9-839d-d57df7c4cf22)
-
+</center>
 
 
